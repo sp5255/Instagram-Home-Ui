@@ -1,0 +1,129 @@
+
+@import url('http://fonts.cdnfonts.com/css/billabong');
+                
+body{
+    background: #fafafa;
+}
+
+@mixin flex($pos, $dir:row) {
+    display: flex;
+    flex-direction: $dir;
+    @if $dir != column {
+        justify-content: $pos;
+    }
+
+    @if $dir != row {
+        align-items: $pos
+    }
+    
+}
+
+@mixin a-Color(){
+    color: #004080;
+}
+
+.signIn-container{
+    @include flex(unset);    
+    width: 45rem;    
+    height:35rem   ;
+    margin: 3.5rem
+
+}
+
+.side-image, .form_container{
+    @include flex(center,column);    
+    width: 50%;   
+}
+
+.form_container{
+    padding: 1.5em 0em;
+}
+
+.side-image > img {
+    max-height: 100%;
+}
+.login-form{
+    @include flex(center, column );
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    background: #ffffff;
+}
+
+.form__title{    
+    margin: 1rem;
+    line-height: 1.6em;
+    font-size: 3.5em;
+    font-family: 'Billabong', sans-serif;
+                                                
+}
+
+form > div {
+    margin: 0.5em;           
+}
+
+.input , .fbLogin{
+    padding: 0.4em;
+    width: 17em;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid #d1d1d1;    
+}
+.fbLogin {    
+    
+    padding: 0.4em 0.2em;            
+    border:none;
+    width: 18.2em;    
+       text-align: center;
+    a{
+        @include a-Color();
+        text-decoration: none   ;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+}
+
+
+[type = 'submit']{
+    width: 18.2em;
+    padding: 0.4em 0.2em;
+    margin-top: 0.1rem;
+    background: #0069ff;
+    color: white;
+    border:none;
+    border-radius: 0.3rem;
+}
+
+[type = 'submit']:disabled {
+    filter:opacity(0.5);
+}
+
+hr {
+    width: 15em;
+    margin: 1.5em;
+}
+
+.forgotPass{
+    margin: 1em;
+    a{
+        @include a-Color();
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+}
+
+.footer{
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0em;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin: 2em 0em;
+    background: #ffffff;
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        @include a-Color();                
+    }
+}

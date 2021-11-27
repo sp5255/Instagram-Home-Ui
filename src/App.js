@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+// import Post from './Components/Post';
+
+import { Route, Routes } from "react-router";
+import Form from './Components/Form'
+import "./App.css";
+
+import SignInForm from "./Components/SingnInForm";
+// import Form from './Components/Form'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/" element={<h1>welcome to instagram project </h1>} />
+                <Route path = '/signUp' element = {<Form />} />   
+                <Route path = '/login' element = {<SignInForm />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

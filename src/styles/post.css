@@ -1,0 +1,49 @@
+.post--container {
+    background:#a9ebda;
+    width:24em;
+    border: 1px solid black;
+}
+.imgStyle{            
+   max-height: 80vh;   
+   width: 100%;
+   
+}
+.account--name{
+    padding: 0.5em;    
+    background: #ffffff;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.account__name{
+    display: flex;
+    align-items: center;    
+}
+.account__name__avtar{
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    outline: 2px solid red;
+}
+.account__name > h5{
+    margin-left: 1em;
+}
+.icons{
+    font-size: 1.6em;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: space-between;
+}
+.icons > div{
+    display:  flex;
+    align-items: center;        
+}
+.icons > div > *{    
+    cursor: pointer;
+    margin: 0.3em;
+    margin-left: 0.3em;
+
+}
+.icons > div > :nth-child(1){
+    margin-left: 0.1em;
+}

@@ -1,0 +1,140 @@
+@import url("http://fonts.cdnfonts.com/css/billabong");
+body {
+  background: #fafafa;
+}
+
+.signIn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  width: 45rem;
+  height: 35rem;
+  margin: 3.5rem;
+}
+
+.side-image, .form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.form_container {
+  padding: 1.5em 0em;
+}
+
+.side-image > img {
+  max-height: 100%;
+}
+
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  background: #ffffff;
+}
+
+.form__title {
+  margin: 1rem;
+  line-height: 1.6em;
+  font-size: 3.5em;
+  font-family: 'Billabong', sans-serif;
+}
+
+form > div {
+  margin: 0.5em;
+}
+
+.input, .fbLogin {
+  padding: 0.4em;
+  width: 17em;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid #d1d1d1;
+}
+
+.fbLogin {
+  padding: 0.4em 0.2em;
+  border: none;
+  width: 18.2em;
+  text-align: center;
+}
+
+.fbLogin a {
+  color: #004080;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+[type='submit'] {
+  width: 18.2em;
+  padding: 0.4em 0.2em;
+  margin-top: 0.1rem;
+  background: #0069ff;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+[type='submit']:disabled {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+hr {
+  width: 15em;
+  margin: 1.5em;
+}
+
+.forgotPass {
+  margin: 1em;
+}
+
+.forgotPass a {
+  color: #004080;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.footer {
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0em;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin: 2em 0em;
+  background: #ffffff;
+}
+
+.footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #004080;
+}
+/*# sourceMappingURL=signInForm.css.map */
