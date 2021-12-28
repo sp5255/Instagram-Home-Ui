@@ -1,0 +1,27 @@
+.home-avatar-container{
+    display:  flex;
+    // border: 2px solid green;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0rem;
+    position: sticky;
+    top: 3rem;
+    
+}
+
+.home-avatar-container >div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.avatar-user{
+    // display: flex;
+    // flex-direction: column;
+    margin-left: 0.6rem;    
+}
+
+#home-avatar{
+    width: 4rem;
+    height: 4rem;
+}

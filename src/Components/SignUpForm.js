@@ -3,7 +3,7 @@ import InputField from "./InputField";
 import { Link } from "react-router-dom";
 import "../styles/form.css";
 
-class Form extends React.Component {
+class SignUpForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,7 +12,6 @@ class Form extends React.Component {
             userName: "",
             password: "",
         };
-
         // this.handleChange = this.handleChange.bind(this);
     }
 
@@ -106,4 +105,4 @@ class Form extends React.Component {
     }
 }
 
-export default Form;
+export default SignUpForm;

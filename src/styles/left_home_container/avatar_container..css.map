@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAA;EAClB,OAAO,EAAG,IAAI;EACd,MAAM,EAAE,eAAe;CAC1B",
+    "sources": [
+        "avatar_container..scss"
+    ],
+    "names": [],
+    "file": "avatar_container..css"
+}

@@ -3,26 +3,35 @@ import InputField from "./InputField";
 
 import "../styles/SignInForm/signInForm.css";
 
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import instaF from "../images/instaF.png";
+// import Post from './Post';
+// const userName = 'sachin.pundir';
 
-export default function SignInForm() {
+export default function SignInForm(props) {
     const [user, setUser] = useState("");
     const [password, setPassword] = useState("");
+    const [isLoggedIn, setLoggedIn] = useState(false);
 
     const handleSubmit = (e) => {
-        console.log("exec", password.length);
         e.preventDefault();
+         props.getUserName(user);        
+        // console.log("exec", password.length);
+        // console.log(props);
         alert("sign in successfull");
+        // return;
         setUser("");
         setPassword("");
+        setLoggedIn(true);
     };
+    
 
-    console.log(user, password, "times");
+    console.log(user, password,isLoggedIn, "times");
+    if(!isLoggedIn)
     return (
         <div className="signIn-container">
             <div className="side-image">
-                <img src={instaF} />
+                <img src={instaF} alt = "instagram signup"/>
             </div>
 
             <div className="form_container">
@@ -72,4 +81,11 @@ export default function SignInForm() {
             </div>
         </div>
     );
+
+    else if(isLoggedIn)
+    return(
+        // <Post userName = {userName} />
+        <Navigate to = '/' />
+        // <Home />
+    )
 }

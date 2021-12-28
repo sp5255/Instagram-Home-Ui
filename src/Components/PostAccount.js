@@ -7,6 +7,7 @@ class PostAccount extends React.Component {
                     <img
                         src={this.props.profilePic}
                         className="account__name__avtar"
+                        alt = "post"
                     />
                     <h5>{this.props.name}</h5>
                 </div>

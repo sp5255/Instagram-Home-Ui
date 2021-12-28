@@ -1,12 +1,13 @@
 .post--container {
     background:#a9ebda;
-    width:24em;
+    width:100%;
     border: 1px solid black;
+    margin-bottom: 2rem;
 }
 .imgStyle{            
-   max-height: 80vh;   
+   /* max-height: 80vh;      */
    width: 100%;
-   
+   max-width: 614px;
 }
 .account--name{
     padding: 0.5em;    
@@ -46,4 +47,14 @@
 }
 .icons > div > :nth-child(1){
     margin-left: 0.1em;
+}
+
+@media all and (max-width:700px) {
+    .imgStyle{            
+        /* max-height: 80vh;      */
+        width: 100%;        
+     }
+     /* .post--container{
+         width: 40vw;
+     } */
 }

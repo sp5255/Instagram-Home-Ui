@@ -1,0 +1,26 @@
+
+.home_content{
+    
+    // border: 2px solid ;
+    display: flex;    
+    justify-content: center;
+    // align-items: center;
+    background: #fafafa;
+    
+}
+
+
+.home_left{
+    width: 243px;
+    margin-left: 1rem;
+}
+
+@media all and (max-width: 700px ) {
+    .home_left{
+        display: none;
+    }
+
+    .home_content{
+        width: 100vw;
+    }
+}

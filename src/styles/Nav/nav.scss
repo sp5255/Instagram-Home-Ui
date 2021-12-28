@@ -1,0 +1,72 @@
+@mixin flex($justify, $align, $dir: row) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+
+    @if $dir != row {
+        justify-content: $align;
+        align-items: $justify;
+    }
+}
+
+.App {
+    display: initial;
+}
+.nav {
+    @include flex(center, center);
+    
+    background: white;
+    // width:100vw;
+    font-size: 2rem;
+    font-family: "Billabong", sans-serif;
+    padding: 0.3rem 0rem;
+    filter: drop-shadow(1px -2px 2px black);
+    position: sticky;
+    top: 0em;
+    margin: 0em 0em 1rem;
+    z-index: 10;
+    width: 100vw;
+}
+
+.nav--search{
+    margin: 0rem 10.5rem;
+}
+.nav--search > input {
+    background: url(../../icons/search_black_24dp.svg) no-repeat no-repeat left #f1f1f1;
+    outline: none;    
+    background-size: 1rem;
+    padding: 0.2em 0.8em;
+    border: 1px solid;
+    /* color: white; */
+    border-radius: 0.3em;
+    
+}
+
+.nav--icons {
+    @include flex(center, center);
+    margin-right: 3rem;
+}
+
+.nav--icons > * {
+
+    width: 0.65em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+@media all and (max-width: 700px) {
+    .nav {
+        @include flex(space-evenly,center  );
+        width: 100vw;   
+        margin: none;     
+        font-size: 1.5em;
+    }
+    .nav--search{
+        margin: initial;
+    }
+    .nav--icons {
+        // @include flex(center, center);
+        margin-right: initial;
+    }
+}
