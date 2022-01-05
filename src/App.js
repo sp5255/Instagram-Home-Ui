@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 // import Post from './Components/Post';
-import { Navigate, Route, Routes } from "react-router";
+import {  Route, Routes } from "react-router";
 import SignInForm from "./Components/SingnInForm";
 import SignUpForm from "./Components/SignUpForm";
 import {useState} from 'react' ;

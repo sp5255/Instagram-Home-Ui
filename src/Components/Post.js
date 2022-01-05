@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/post.css";
-import procreate from "../images/procreat.jpg";
+// import procreate from "../images/procreat.jpg";
 import PostAccount from "./PostAccount";
 import Icons from "./Icons";
 
-import rahul from '../images/posts/rahul.jpg'
+// import rahul from '../images/posts/rahul.jpg'
 
 
 class Post extends React.Component {

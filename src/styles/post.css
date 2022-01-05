@@ -1,5 +1,5 @@
 .post--container {
-    background:#a9ebda;
+    /* background:#a9ebda; */
     width:100%;
     border: 1px solid black;
     margin-bottom: 2rem;
@@ -9,6 +9,7 @@
    width: 100%;
    max-width: 614px;
 }
+
 .account--name{
     padding: 0.5em;    
     background: #ffffff;

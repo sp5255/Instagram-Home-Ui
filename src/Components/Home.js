@@ -8,10 +8,10 @@ import procreat from "../images/procreat.jpg";
 import Users from "../posts";
 
 export default function Home(props) {        
-    const postArr = [1,2,3];
+    // const postArr = [1,2,3];
     const userName = props.userName;
     
-    if(userName != '')
+    if(userName !== '')
     return (
         <div className="home-component">
             <Nav />

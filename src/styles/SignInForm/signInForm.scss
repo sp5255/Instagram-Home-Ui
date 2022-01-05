@@ -23,16 +23,17 @@ body{
 }
 
 .signIn-container{
-    @include flex(unset);    
+    @include flex(center);    
     width: 45rem;    
     height:35rem   ;
-    margin: 3.5rem
+    margin: 3.5rem;
+    width:100vw;
 
 }
 
 .side-image, .form_container{
     @include flex(center,column);    
-    width: 50%;   
+    // width: 50%;   
 }
 
 .form_container{
